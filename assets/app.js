@@ -1,0 +1,2 @@
+document.querySelectorAll('[data-event]').forEach(el=>el.addEventListener('click',()=>{try{window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:el.dataset.event})}catch(e){}}));
+const f=document.querySelector('#repairForm');if(f)f.addEventListener('submit',e=>{e.preventDefault();const m=document.querySelector('#formMsg');if(m)m.textContent='درخواست شما آماده ارسال است؛ لطفاً برای ثبت نهایی با مارال سرویس تماس بگیرید.';});
